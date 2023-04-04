@@ -6,5 +6,5 @@ styleUrls:['./header.component.css']
 })
 
 export class HeaderComponent{
-
+  collapsed = true
 }
