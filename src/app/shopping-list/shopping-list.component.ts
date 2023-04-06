@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Ingredient } from '../shared/ingredient.model';
 
 @Component({
@@ -11,4 +11,9 @@ ingredients:Ingredient[]=[
   new Ingredient('Banana',8),
   new Ingredient('Carrot',10),
 ]
+
+addTheIngredient(ingredient:Ingredient){
+  this.ingredients.push(ingredient)
+}
+
 }
