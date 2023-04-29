@@ -7,9 +7,4 @@ styleUrls:['./header.component.css']
 
 export class HeaderComponent{
   collapsed = true
-  @Output() navigatePages=new EventEmitter<string>()
-
-  onSelect(selectedLink:string){
-    this.navigatePages.emit(selectedLink)
-  }
 }

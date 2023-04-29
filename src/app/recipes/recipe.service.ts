@@ -18,6 +18,10 @@ export class RecipeService{
     return this.recipes.slice()
   }
 
+  getrecipe(id:number):Recipe{
+    return this.recipes[id]
+  }
+
   toShoppingList(ingredients:Ingredient[]){
     let ingredientNamesFoundInShopiingList=this.shoppingListService.getIngredients().map((el)=>el.name)
     let filteredIngredients:Ingredient[]=[]
